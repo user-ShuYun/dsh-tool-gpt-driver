@@ -1,0 +1,6 @@
+- insert:
+    - id: dsh-tool-gpt-driver
+      name: dsh-tool-gpt-driver
+      config:
+        port: 9222
+        minWidth: 1000

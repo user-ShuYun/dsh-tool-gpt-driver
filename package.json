@@ -1,0 +1,32 @@
+{
+  "name": "dsh-tool-gpt-driver",
+  "version": "0.1.0",
+  "description": "DSH plugin: drive a logged-in ChatGPT tab over CDP — one prompt at a time, wait for completion, export the original image.",
+  "type": "module",
+  "main": "src/index.js",
+  "exports": {
+    ".": "./src/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "src/",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=22.19"
+  },
+  "keywords": [
+    "deepseek-harness",
+    "dsh-plugin",
+    "chatgpt",
+    "cdp",
+    "image-generation"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "license": "MIT"
+}
